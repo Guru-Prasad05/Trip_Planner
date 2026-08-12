@@ -1,0 +1,211 @@
+import type { SectionContent } from "./types";
+import { img } from "./types";
+
+const base = "/nature-tours";
+
+export const natureContent: SectionContent = {
+  theme: "nature",
+  basePath: base,
+  hubTitle: "Nature Tours",
+  seoTitle: "Wild Odisha Nature Tours | Wildlife, Waterfalls & Coasts",
+  seoDescription:
+    "Tiger safaris in Similipal, dolphin cruises on Chilika, summit treks in Koraput & mangrove safaris in Bhitarkanika. Custom group nature tours by local experts.",
+  eyebrow: "Wild Odisha",
+  headline: "Step Into the Wild Heart of Eastern India",
+  subhead:
+    "Six distinct natural worlds. One extraordinary state. Crafted for groups who want to go deeper.",
+  intro: [
+    "Odisha's natural canvas is unlike anything else in India. Spanning over 155,707 sq km, the state cradles tiger reserves, mangrove coastlines, highland tabletops, thundering waterfalls, and Asia's largest brackish water lagoon — all within reach of a single curated journey.",
+    "Every route we design is built around slow travel, local immersion, and a minimal environmental footprint.",
+  ],
+  portals: [
+    { tier: 2, label: "Koraput Highlands", tagline: "Peaks, falls & tribal villages", href: `${base}/koraput`, theme: "nature", posterSrc: img("photo-1454942901704-3c44c11b2ad1"), posterAlt: "Misty highland peaks of Koraput" },
+    { tier: 2, label: "Similipal National Park", tagline: "Tigers in sal forests", href: `${base}/similipal`, theme: "nature", posterSrc: img("photo-1549366021-9f761d450615"), posterAlt: "Dense sal forest of Similipal" },
+    { tier: 2, label: "Satkosia Gorge", tagline: "The Mahanadi's grand canyon", href: `${base}/satkosia`, theme: "nature", posterSrc: img("photo-1437482078695-73f5ca6c96e2"), posterAlt: "River winding through a forested gorge" },
+    { tier: 2, label: "Chilika Lake", tagline: "Dolphins & migratory birds", href: `${base}/chilika`, theme: "nature", posterSrc: img("photo-1518467166778-b88f373ffec7"), posterAlt: "Boat on a calm lagoon at sunset" },
+    { tier: 2, label: "Coastal Odisha", tagline: "Beaches & nesting turtles", href: `${base}/coastal-odisha`, theme: "nature", posterSrc: img("photo-1505228395891-9a51e7e86bf6"), posterAlt: "Pristine coastline at sunrise" },
+    { tier: 2, label: "Bhitarkanika Mangroves", tagline: "Crocodiles & rare birds", href: `${base}/bhitarkanika`, theme: "nature", posterSrc: img("photo-1559825481-12a05cc00344"), posterAlt: "Dense mangrove channel" },
+  ],
+  packages: [
+    { title: "Weekend Wild Escape", duration: "2N / 3D · Similipal or Chilika", fromPrice: 7999, highlights: ["4–15 people", "Eco-stay & local meals", "One signature safari"], href: `${base}/similipal` },
+    { title: "Highlands Explorer", duration: "4N / 5D · Koraput + Chilika", fromPrice: 14999, highlights: ["8–25 people", "Deomali trek + dolphin cruise", "Tribal village immersion"], href: `${base}/koraput` },
+    { title: "Complete Wild Odisha", duration: "7N / 8D · 4 zones", fromPrice: 24999, highlights: ["Similipal + Satkosia + Chilika + Bhitarkanika", "All permits arranged", "Naturalist-led throughout"], href: `${base}/bhitarkanika` },
+  ],
+  comparison: {
+    headers: ["Package", "Duration", "Destinations", "Group", "From"],
+    rows: [
+      ["Weekend Wild Escape", "2N/3D", "Similipal or Chilika", "4–15", "₹7,999"],
+      ["Highlands Explorer", "4N/5D", "Koraput + Chilika", "8–25", "₹14,999"],
+      ["Complete Wild Odisha", "7N/8D", "Similipal + Satkosia + Chilika + Bhitarkanika", "10–30", "₹24,999"],
+      ["Corporate Nature Retreat", "Custom", "Any 2–3 zones", "15–60", "On Request"],
+    ],
+  },
+  inclusions: [
+    "Government-certified guides & naturalists",
+    "All forest & wildlife permits arranged",
+    "Private AC transport throughout",
+    "Curated authentic Odia meals",
+    "Eco-stay accommodation",
+    "24/7 on-ground trip captain",
+  ],
+  faqs: [
+    { question: "What is the best time to visit Similipal National Park?", answer: "November to April for safaris; the park is closed July–October." },
+    { question: "Can I see dolphins at Chilika Lake?", answer: "Yes — Irrawaddy dolphins are sighted year-round, best on a dawn cruise from Satpada or Barkul." },
+    { question: "Is Koraput safe for group trekking?", answer: "Yes, with our certified local guides and pre-arranged permits. October to February is ideal." },
+    { question: "What wildlife can I spot in Bhitarkanika?", answer: "India's largest saltwater crocodile population, plus herons, storks and kingfishers." },
+    { question: "Are forest permits included in the package?", answer: "Yes — all forest and wildlife permits are pre-arranged in every package." },
+  ],
+  subpages: [
+    {
+      slug: "koraput", basePath: base, theme: "nature",
+      seoTitle: "Koraput Adventure Tour | Deomali Trek & Waterfalls",
+      seoDescription: "Scale Deomali (1,672m), witness Raniduduma Falls, and immerse in tribal village life in Koraput. Custom group trekking & adventure packages.",
+      eyebrow: "Koraput Highlands", headline: "The Call of the Wild: Koraput Adventures",
+      tagline: "Odisha's untamed frontier — where peaks pierce clouds and waterfalls thunder through ancient forests.",
+      posterSrc: img("photo-1454942901704-3c44c11b2ad1"), posterAlt: "Panoramic view of Koraput highlands and waterfalls",
+      overview: [
+        "Koraput is where the Eastern Ghats rise dramatically to meet the sky. At 1,672 metres, Deomali Peak — Odisha's highest summit — offers a summit camping experience under one of India's most star-dense night skies.",
+        "Raniduduma Falls, Odisha's tallest waterfall, plunges through ancient jungle gorges accessible only through a forested trail most groups never discover. The Duduma Falls on the Machkund River is a thundering cascade of water, mist, and sound.",
+        "The highlands are home to the Kondh, Paroja, and Gadaba tribes, whose weekly Haat markets offer an irreplaceable window into a living culture.",
+      ],
+      experiences: [
+        "Summit camping on Deomali Peak (overnight, with guide and gear)",
+        "Sunrise trek to Raniduduma — misty, remote, unforgettable",
+        "Tribal village immersion with evening bonfire and folk performance",
+        "Photography at Duduma Falls at golden hour",
+        "White-water experience on the Machkund River",
+        "Haat market walk with tribal artisan interaction",
+      ],
+      atAGlance: [
+        { label: "Best Season", value: "October to February" },
+        { label: "Ideal Group", value: "6–30 people" },
+        { label: "Terrain", value: "Highland trek + tribal villages" },
+      ],
+    },
+    {
+      slug: "similipal", basePath: base, theme: "nature",
+      seoTitle: "Similipal National Park Tour | Tiger Safari & Eco Camp",
+      seoDescription: "Jeep safaris, Barehipani waterfall trek, birdwatching & luxury eco-camp stays inside Odisha's UNESCO Biosphere Reserve. Group Similipal safari bookings.",
+      eyebrow: "Similipal National Park", headline: "Where Tigers Walk in Sal Forests",
+      tagline: "A UNESCO Biosphere Reserve where the rarest wildlife and India's most dramatic waterfalls coexist.",
+      posterSrc: img("photo-1549366021-9f761d450615"), posterAlt: "Sal forest canopy in Similipal National Park",
+      overview: [
+        "Similipal is Odisha's crown jewel of biodiversity — a UNESCO Biosphere Reserve and Project Tiger sanctuary sprawling across 2,750 sq km of sal forests, grasslands, and river valleys.",
+        "Barehipani Falls (399m) and Joranda Falls (181m) are among the most dramatic waterfalls in South Asia. Jeep safaris reveal Royal Bengal tigers, leopards, elephants, gaur, and the ultra-rare melanistic black leopard.",
+      ],
+      experiences: [
+        "Full-day and half-day jeep safari circuits",
+        "Barehipani Falls trek (permit-required, 6-hour return)",
+        "Birdwatching — 300+ species including hornbills",
+        "Luxury tented eco-camp inside the buffer zone",
+        "Night sky photography (zero light pollution)",
+        "Naturalist-led evening forest talks by campfire",
+      ],
+      atAGlance: [
+        { label: "Best Season", value: "November to April (closed Jul–Oct)" },
+        { label: "Group Size", value: "4–25 people" },
+        { label: "Highlight", value: "Tiger & melanistic leopard" },
+      ],
+    },
+    {
+      slug: "satkosia", basePath: base, theme: "nature",
+      seoTitle: "Satkosia Gorge River Safari | Mahanadi Boat & Eco Camp",
+      seoDescription: "Explore Odisha's most dramatic river gorge — 22 km of Mahanadi through sal forests. Crocodile spotting, kayaking & riverside eco-camps for groups.",
+      eyebrow: "Satkosia Gorge", headline: "The Mahanadi's Grand Canyon",
+      tagline: "Where the sacred Mahanadi carves through 22 kilometres of primordial forest.",
+      posterSrc: img("photo-1437482078695-73f5ca6c96e2"), posterAlt: "Boat on the Mahanadi river through Satkosia gorge",
+      overview: [
+        "The Mahanadi forces its way through a dramatic 22-kilometre gorge flanked by sal forest reserves teeming with gharials, mugger crocodiles, otters, and migratory birds.",
+        "A river cruise through the Satkosia narrows — with birding on both banks — is the signature experience. Luxury eco-tents perched above the gorge offer sunrise views over one of Odisha's most scenic river valleys.",
+      ],
+      experiences: [
+        "Morning and evening boat safari through the gorge",
+        "Gharial and mugger crocodile spotting",
+        "Otter watching at riverside locations",
+        "Bamboo-and-canvas eco-camp stay on the riverbank",
+        "Kayaking on designated river stretches (seasonal)",
+        "Birdwatching — hornbills, kingfishers, fish eagles",
+      ],
+      atAGlance: [
+        { label: "Best Season", value: "October to March" },
+        { label: "Stay", value: "Riverside eco-tents" },
+        { label: "Highlight", value: "Gorge boat safari" },
+      ],
+    },
+    {
+      slug: "chilika", basePath: base, theme: "nature",
+      seoTitle: "Chilika Lake Tour | Dolphin Cruise & Houseboat Stay",
+      seoDescription: "Dawn Irrawaddy dolphin cruises, migratory birds & houseboat nights on Asia's largest lagoon. Group Chilika packages crafted by local experts.",
+      eyebrow: "Chilika Lake", headline: "Asia's Largest Lagoon — Magic Made Liquid",
+      tagline: "Where Irrawaddy dolphins surface in the morning gold and a million migratory birds fill the winter sky.",
+      posterSrc: img("photo-1518467166778-b88f373ffec7"), posterAlt: "Sunset boat silhouette on Chilika lagoon",
+      overview: [
+        "Chilika stretches over 1,100 sq km — Asia's largest brackish water lagoon and one of the world's most important Ramsar Wetlands. Every winter, over a million migratory birds arrive from Siberia, Mongolia, and Central Asia.",
+        "The Irrawaddy dolphins of Chilika are globally rare — fewer than 3,000 survive worldwide. A dawn boat ride towards Satpada offers almost guaranteed sightings of these gentle, round-nosed dolphins surfacing in morning gold.",
+      ],
+      experiences: [
+        "Dawn dolphin cruise from Barkul or Satpada",
+        "Nalaban Bird Sanctuary visit (special permit arranged)",
+        "Sunset boat safari with local fishermen",
+        "Fresh-catch seafood lunch on the lake",
+        "Overnight houseboat stay on the lagoon",
+        "Winter migratory bird watching (Nov–March)",
+      ],
+      atAGlance: [
+        { label: "Best Season", value: "Nov–Mar (birds); year-round (dolphins)" },
+        { label: "Stay", value: "Houseboat available" },
+        { label: "Highlight", value: "Irrawaddy dolphins" },
+      ],
+    },
+    {
+      slug: "coastal-odisha", basePath: base, theme: "nature",
+      seoTitle: "Coastal Odisha Tour | Chandrabhaga, Turtles & Gopalpur",
+      seoDescription: "Chandrabhaga Blue Flag beach near Konark, Olive Ridley turtle nesting at Rushikulya & colonial Gopalpur-on-Sea. Group coastal Odisha tours.",
+      eyebrow: "Coastal Odisha", headline: "From Golden Sunsets to Nesting Sea Turtles",
+      tagline: "Pristine coastlines, uncrowded shores, and the Olive Ridley Arribada.",
+      posterSrc: img("photo-1505228395891-9a51e7e86bf6"), posterAlt: "Chandrabhaga beach at sunrise",
+      overview: [
+        "While Puri's beach is famous, Odisha's coastline hides gems most visitors never find. Chandrabhaga Beach near Konark is one of India's Blue Flag beaches — ASI-restricted dunes meeting the Bay of Bengal without a single hotel on the horizon.",
+        "Rushikulya Beach in Ganjam is the seasonal home of the Olive Ridley sea turtles — one of the world's largest mass-nesting events, where tens of thousands of turtles emerge to nest under a full moon.",
+      ],
+      experiences: [
+        "Sunrise walk at Chandrabhaga with Konark as backdrop",
+        "Private beach bonfire dinner at Gopalpur",
+        "Olive Ridley turtle nesting observation (Dec–Mar, low-impact)",
+        "Sea kayaking along the Puri-Konark marine drive",
+        "Village-style coastal cooking with a local family",
+        "Lighthouse climb at Gopalpur",
+      ],
+      atAGlance: [
+        { label: "Best Season", value: "Oct–Mar; turtles Dec–Mar" },
+        { label: "Highlight", value: "Olive Ridley Arribada" },
+        { label: "Vibe", value: "Uncrowded, colonial charm" },
+      ],
+    },
+    {
+      slug: "bhitarkanika", basePath: base, theme: "nature",
+      seoTitle: "Bhitarkanika Tour | Saltwater Crocodile Safari & Birds",
+      seoDescription: "India's finest mangrove ecosystem — saltwater crocodile safaris, heronry birdwatching & village stays in Bhitarkanika National Park, Odisha.",
+      eyebrow: "Bhitarkanika Mangroves", headline: "Mangroves, Crocodiles & the World's Rarest Birds",
+      tagline: "India's finest mangrove ecosystem — raw, wild, and strangely peaceful.",
+      posterSrc: img("photo-1559825481-12a05cc00344"), posterAlt: "Motorboat gliding through a mangrove channel",
+      overview: [
+        "Bhitarkanika's 672 sq km national park on the Brahmani-Baitarani delta holds India's largest saltwater crocodile population, including a world-record 23-foot specimen.",
+        "Boat rides through mangrove channels, with crocodiles just metres away, are among the most visceral wildlife encounters in eastern India. Nearby Gahirmatha Beach is the world's largest Olive Ridley sea turtle rookery.",
+      ],
+      experiences: [
+        "Motorboat safari through mangrove channels",
+        "Saltwater crocodile observation from close range",
+        "Village stay with local Odia fishing communities",
+        "Gahirmatha nesting beach observation (seasonal)",
+        "Birdwatching in the Bagagahana heronry",
+        "Photography of mangrove root systems at dawn",
+      ],
+      atAGlance: [
+        { label: "Best Season", value: "October to March" },
+        { label: "Highlight", value: "Saltwater crocodiles" },
+        { label: "Stay", value: "Village & forest lodges" },
+      ],
+    },
+  ],
+};
