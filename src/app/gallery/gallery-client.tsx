@@ -168,8 +168,8 @@ export default function GalleryClient({ initialMedia, initialTrips }: GalleryCli
               <span className="block text-forest italic font-light">Sacred Journeys</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-ink/70 font-light">
-              Captured moments from nature's embrace—each image a testament to the beauty
-              of slow travel and mindful exploration across Odisha's sacred landscapes.
+              Captured moments from nature&apos;s embrace—each image a testament to the beauty
+              of slow travel and mindful exploration across Odisha&apos;s sacred landscapes.
             </p>
           </div>
         </header>
