@@ -17,7 +17,7 @@ export function Hero() {
       <div
         aria-hidden
         className="absolute inset-0 z-[1]"
-        style={{ background: "linear-gradient(90deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.28) 52%, rgba(0,0,0,0) 75%)" }}
+        style={{ background: "linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.48) 55%, rgba(0,0,0,0.15) 80%)" }}
       />
 
       {/* Bottom gradient fade */}
@@ -60,22 +60,22 @@ export function Hero() {
               </p>
             </div>
 
-            <h1 className="space-y-1">
-              <span className="block font-display text-hero-primary font-extrabold uppercase leading-[0.88] tracking-tight text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.5)]">
+            <h1 className="space-y-2">
+              <span className="block font-display text-hero-primary font-black uppercase leading-[0.88] tracking-tight text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9), 0 8px 16px rgba(0,0,0,0.6)' }}>
                 Journey Into
               </span>
-              <span className="block font-display text-hero-accent font-light italic leading-[0.82] tracking-nature text-gold drop-shadow-[0_3px_12px_rgba(0,0,0,0.4)]">
+              <span className="block font-display text-hero-accent font-semibold italic leading-[0.82] tracking-nature text-gold drop-shadow-[0_4px_20px_rgba(0,0,0,0.7)]" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.9), 0 8px 16px rgba(0,0,0,0.5)' }}>
                 The Wild
               </span>
             </h1>
 
-            <p className="mt-9 max-w-lg text-[15px] leading-[1.65] text-white/88 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)] sm:text-[17px] font-light">
+            <p className="mt-9 max-w-lg text-[16px] leading-[1.65] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-[18px] font-normal" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.9)' }}>
               Expert-led trekking journeys through sacred forests and untouched highlands.
               Small groups, vetted stays, safety-first protocols — where adventure meets trust.
             </p>
 
             {/* Trust indicators */}
-            <div className="mt-6 flex flex-wrap items-center gap-4 text-white/70 text-xs">
+            <div className="mt-6 flex flex-wrap items-center gap-4 text-white text-xs font-semibold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
               <div className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
