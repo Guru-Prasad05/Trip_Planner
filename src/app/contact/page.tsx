@@ -1,9 +1,8 @@
-"use client";
-
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/Section";
 import { InquiryForm } from "@/components/ui/InquiryForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { ContactCards } from "@/components/contact/ContactCards";
 import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
@@ -86,7 +85,7 @@ const contactItems = [
     value: siteConfig.contact.phone,
     sub: "Mon - Sat, 9 am - 7 pm IST",
     href: `tel:${siteConfig.contact.phone.replace(/[^+\d]/g, "")}`,
-    Icon: PhoneIcon,
+    icon: "phone" as const,
   },
   {
     id: "email",
@@ -94,7 +93,7 @@ const contactItems = [
     value: siteConfig.contact.email,
     sub: "We reply within a few hours",
     href: `mailto:${siteConfig.contact.email}`,
-    Icon: EmailIcon,
+    icon: "email" as const,
   },
   {
     id: "whatsapp",
@@ -102,7 +101,7 @@ const contactItems = [
     value: "Chat instantly",
     sub: "Tap the button  -  we're quick",
     href: `https://wa.me/${siteConfig.contact.whatsapp}`,
-    Icon: WhatsAppIcon,
+    icon: "whatsapp" as const,
   },
   {
     id: "address",
@@ -110,7 +109,7 @@ const contactItems = [
     value: siteConfig.contact.address,
     sub: "Odisha's gateway to incredible India",
     href: "https://maps.google.com/?q=Bhubaneswar,Odisha,India",
-    Icon: MapPinIcon,
+    icon: "map" as const,
   },
 ];
 
@@ -253,75 +252,7 @@ export default function ContactPage() {
             </p>
 
             {/* Contact cards */}
-            <ul className="mt-8 space-y-4" role="list">
-              {contactItems.map(({ id, label, value, sub, href, Icon }) => (
-                <li key={id}>
-                  <a
-                    href={href}
-                    target={id === "address" || id === "whatsapp" ? "_blank" : undefined}
-                    rel={id === "address" || id === "whatsapp" ? "noopener noreferrer" : undefined}
-                    className="group flex items-start gap-4 rounded-2xl p-5 transition-all duration-200"
-                    style={{
-                      background: "color-mix(in srgb, var(--color-ink) 96%, var(--color-saffron) 4%)",
-                      border: "1px solid color-mix(in srgb, var(--color-saffron) 12%, transparent)",
-                      boxShadow: "0 2px 12px rgba(0,0,0,0.25)",
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
-                      (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 28px rgba(0,0,0,0.35), 0 0 0 1px color-mix(in srgb, var(--color-saffron) 25%, transparent)";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.transform = "";
-                      (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 12px rgba(0,0,0,0.25)";
-                    }}
-                  >
-                    {/* Icon circle */}
-                    <div
-                      className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
-                      style={{
-                        background: "color-mix(in srgb, var(--color-saffron) 15%, transparent)",
-                        color: "var(--color-saffron)",
-                      }}
-                    >
-                      <Icon />
-                    </div>
-
-                    {/* Text */}
-                    <div className="min-w-0">
-                      <p
-                        className="text-xs font-semibold uppercase tracking-wider"
-                        style={{ color: "color-mix(in srgb, var(--color-ivory) 50%, transparent)" }}
-                      >
-                        {label}
-                      </p>
-                      <p
-                        className="mt-0.5 truncate text-base font-medium"
-                        style={{ color: "var(--color-ivory)" }}
-                      >
-                        {value}
-                      </p>
-                      <p
-                        className="mt-0.5 text-sm"
-                        style={{ color: "color-mix(in srgb, var(--color-ivory) 45%, transparent)" }}
-                      >
-                        {sub}
-                      </p>
-                    </div>
-
-                    {/* Arrow indicator */}
-                    <div
-                      className="ml-auto mt-1 shrink-0 translate-x-0 opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:opacity-100"
-                      style={{ color: "var(--color-saffron)" }}
-                      aria-hidden="true"
-                    >
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                      </svg>
-                    </div>
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <ContactCards items={contactItems} />
           </div>
 
           {/* Right col  -  inquiry form */}
