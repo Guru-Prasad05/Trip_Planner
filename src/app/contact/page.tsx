@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/Section";
 import { InquiryForm } from "@/components/ui/InquiryForm";
