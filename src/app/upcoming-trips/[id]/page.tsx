@@ -50,7 +50,7 @@ export default async function TripDetailPage({ params }: PageProps) {
       {/* HERO */}
       <section className="relative h-[85vh] min-h-[560px] overflow-hidden">
         {t.cover_url ? (
-          <Image src={t.cover_url} alt={t.title} fill className="object-cover scale-105" priority />
+          <Image src={t.cover_url} alt={t.title} fill className="object-cover" priority />
         ) : (
           <div className="absolute inset-0" style={{ background: "var(--color-forest)" }} />
         )}
@@ -211,8 +211,8 @@ export default async function TripDetailPage({ params }: PageProps) {
             style={{ background: "var(--color-forest)" }}
           >
             {/* Price header */}
-            <div className="px-7 pt-8 pb-6" style={{ borderBottom: "1px solid rgba(251,247,240,0.12)" }}>
-              <p className="text-xs font-body tracking-[0.15em] uppercase mb-1" style={{ color: "rgba(251,247,240,0.55)" }}>Starting from</p>
+            <div className="px-7 pt-10 pb-8" style={{ borderBottom: "1px solid rgba(251,247,240,0.12)" }}>
+              <p className="text-xs font-body tracking-[0.15em] uppercase mb-2" style={{ color: "rgba(251,247,240,0.55)" }}>Starting from</p>
               <div className="flex items-baseline gap-1">
                 <span
                   className="font-display font-black leading-none"
@@ -342,37 +342,6 @@ export default async function TripDetailPage({ params }: PageProps) {
           >
             <InquiryForm section="nature" />
           </div>
-        </div>
-      </section>
-
-      {/* BOTTOM CTA STRIP */}
-      <section
-        className="py-12 px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-6"
-        style={{ background: "var(--color-saffron)" }}
-      >
-        <div>
-          <p className="font-display font-bold text-2xl" style={{ color: "var(--color-ivory)" }}>{t.title}</p>
-          <p className="font-body text-sm mt-0.5" style={{ color: "rgba(251,247,240,0.75)" }}>
-            {formatINR(Number(t.price_per_person))} per person · {t.duration}
-          </p>
-        </div>
-        <div className="flex gap-3 shrink-0">
-          <a
-            href={wa}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl font-body font-semibold text-sm transition-opacity hover:opacity-90"
-            style={{ background: "var(--color-ivory)", color: "var(--color-saffron)" }}
-          >
-            WhatsApp Now
-          </a>
-          <a
-            href={`tel:${phone}`}
-            className="px-6 py-3 rounded-xl font-body font-medium text-sm transition-opacity hover:opacity-80"
-            style={{ background: "rgba(255,255,255,0.2)", color: "var(--color-ivory)", border: "1px solid rgba(255,255,255,0.3)" }}
-          >
-            Call
-          </a>
         </div>
       </section>
     </div>
