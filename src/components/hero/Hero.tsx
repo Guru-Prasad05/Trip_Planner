@@ -38,7 +38,7 @@ export function Hero() {
         <path d="M0,28 Q180,56 360,28 T720,28 T1080,28 T1440,28 L1440,56 L0,56 Z" fill="currentColor"/>
       </svg>
 
-      {/* Botanical accent — top right */}
+      {/* Botanical accent  -  top right */}
       <div className="absolute top-16 right-16 w-48 h-48 opacity-[0.07] pointer-events-none z-[2]" aria-hidden="true">
         <svg viewBox="0 0 100 100" className="text-white">
           <ellipse cx="50" cy="50" rx="18" ry="32" fill="currentColor" opacity="0.3"/>
@@ -71,7 +71,7 @@ export function Hero() {
 
             <p className="mt-9 max-w-lg text-[16px] leading-[1.65] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-[18px] font-normal" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.9)' }}>
               Expert-led trekking journeys through sacred forests and untouched highlands.
-              Small groups, vetted stays, safety-first protocols — where adventure meets trust.
+              Small groups, vetted stays, safety-first protocols  -  where adventure meets trust.
             </p>
 
             {/* Trust indicators */}

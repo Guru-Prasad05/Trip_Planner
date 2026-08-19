@@ -7,7 +7,7 @@ import { themeColors } from "./types";
 
 /**
  * Vivid animated "living scene" inside a portal arch.
- * A themed flowing-energy shader that pulses, swirls, and breathes —
+ * A themed flowing-energy shader that pulses, swirls, and breathes  - 
  * making the portal feel like a doorway to another world.
  */
 export default function PortalScene({ theme }: { theme: SectionTheme }) {
@@ -96,7 +96,7 @@ export default function PortalScene({ theme }: { theme: SectionTheme }) {
           // Combine
           float energy = spiral * 0.5 + stream * 0.3 + pulse * 0.2;
           
-          // Color mixing — vibrant between base and glow
+          // Color mixing  -  vibrant between base and glow
           vec3 col = mix(uBase, uGlow, smoothstep(0.2, 0.8, energy));
           col += vec3(pulse * 0.15); // Bright pulse at center
           

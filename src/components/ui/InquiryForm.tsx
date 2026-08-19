@@ -26,7 +26,7 @@ export function InquiryForm({
 }) {
   const [state, formAction, pending] = useActionState(submitInquiry, initialState);
 
-  // Success state — centered, clean, no card wrapper (parent provides)
+  // Success state  -  centered, clean, no card wrapper (parent provides)
   if (state.ok) {
     return (
       <div className="flex flex-col items-center gap-4 py-8 text-center">
@@ -153,7 +153,7 @@ export function InquiryForm({
         <p className="mt-4 text-sm text-red-500">{state.message}</p>
       )}
 
-      {/* Submit — full-width saffron pill */}
+      {/* Submit  -  full-width saffron pill */}
       <button
         type="submit"
         disabled={pending}

@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Plan Your Trip | Free Consultation",
   description:
-    "Speak to a trip curator about your Odisha or all-India journey — group tours, retreats, celebrations & pilgrimages. Free consultation, proposal in 24 hours.",
+    "Speak to a trip curator about your Odisha or all-India journey  -  group tours, retreats, celebrations & pilgrimages. Free consultation, proposal in 24 hours.",
   path: "/contact",
 });
 
@@ -82,7 +82,7 @@ const contactItems = [
     id: "phone",
     label: "Call Us",
     value: siteConfig.contact.phone,
-    sub: "Mon – Sat, 9 am – 7 pm IST",
+    sub: "Mon - Sat, 9 am - 7 pm IST",
     href: `tel:${siteConfig.contact.phone.replace(/[^+\d]/g, "")}`,
     Icon: PhoneIcon,
   },
@@ -98,7 +98,7 @@ const contactItems = [
     id: "whatsapp",
     label: "WhatsApp",
     value: "Chat instantly",
-    sub: "Tap the button — we're quick",
+    sub: "Tap the button  -  we're quick",
     href: `https://wa.me/${siteConfig.contact.whatsapp}`,
     Icon: WhatsAppIcon,
   },
@@ -116,7 +116,7 @@ const trustItems = [
   {
     Icon: ClockIcon,
     headline: "Reply in 24 Hours",
-    body: "A dedicated trip curator responds to every enquiry — no bots, no auto-replies.",
+    body: "A dedicated trip curator responds to every enquiry  -  no bots, no auto-replies.",
   },
   {
     Icon: ShieldIcon,
@@ -195,7 +195,7 @@ export default function ContactPage() {
             className="mx-auto mt-5 max-w-xl text-balance text-lg leading-relaxed"
             style={{ color: "rgba(255,255,255,0.65)" }}
           >
-            Tell us your dream — we&apos;ll shape it into an itinerary that fits
+            Tell us your dream  -  we&apos;ll shape it into an itinerary that fits
             perfectly. A trip curator will reach out within&nbsp;24 hours.
           </p>
 
@@ -222,7 +222,7 @@ export default function ContactPage() {
       <Section className="py-16 lg:py-24">
         <div className="grid gap-14 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
 
-          {/* Left col — contact info */}
+          {/* Left col  -  contact info */}
           <div>
             <p
               className="text-xs font-semibold uppercase tracking-[0.18em]"
@@ -322,7 +322,7 @@ export default function ContactPage() {
             </ul>
           </div>
 
-          {/* Right col — inquiry form */}
+          {/* Right col  -  inquiry form */}
           <div
             className="rounded-3xl p-8 lg:p-10"
             style={{
@@ -350,7 +350,7 @@ export default function ContactPage() {
               className="mt-2 mb-6 text-sm leading-relaxed"
               style={{ color: "color-mix(in srgb, var(--color-ink) 55%, transparent)" }}
             >
-              Share your rough idea — dates, group size, interests. We handle the rest.
+              Share your rough idea  -  dates, group size, interests. We handle the rest.
             </p>
             <InquiryForm section="general" heading="" />
           </div>

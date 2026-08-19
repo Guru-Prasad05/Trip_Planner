@@ -92,7 +92,7 @@ export function PortalArch({ portal }: { portal: PortalData }) {
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={onLeave}
           className="relative block h-full w-full outline-offset-4"
-          aria-label={`Enter ${portal.label} — ${portal.tagline}`}
+          aria-label={`Enter ${portal.label}  -  ${portal.tagline}`}
         >
           <Image
             src={portal.posterSrc}

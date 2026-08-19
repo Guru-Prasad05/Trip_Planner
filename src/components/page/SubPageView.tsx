@@ -72,7 +72,7 @@ export function SubPageView({
   return (
     <>
       {/* ------------------------------------------------------------------ */}
-      {/* HERO — full-bleed, handled by SectionHero                          */}
+      {/* HERO  -  full-bleed, handled by SectionHero                          */}
       {/* ------------------------------------------------------------------ */}
       <SectionHero
         eyebrow={content.eyebrow}
@@ -95,7 +95,7 @@ export function SubPageView({
       />
 
       {/* ------------------------------------------------------------------ */}
-      {/* OVERVIEW — white bg, two-column, decorative saffron frame on image */}
+      {/* OVERVIEW  -  white bg, two-column, decorative saffron frame on image */}
       {/* ------------------------------------------------------------------ */}
       <Section>
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
@@ -107,12 +107,12 @@ export function SubPageView({
             viewport={{ once: true }}
             className="relative"
           >
-            {/* Decorative saffron frame — offset behind the image */}
+            {/* Decorative saffron frame  -  offset behind the image */}
             <div
               aria-hidden
               className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border-2 border-[--color-saffron]/40"
             />
-            {/* Gold corner accent — top-left */}
+            {/* Gold corner accent  -  top-left */}
             <div
               aria-hidden
               className="absolute -top-3 -left-3 h-20 w-20 rounded-tl-2xl border-t-2 border-l-2 border-[--color-gold]"
@@ -175,7 +175,7 @@ export function SubPageView({
       <PatachitraDivider />
 
       {/* ------------------------------------------------------------------ */}
-      {/* EXPERIENCES — dark forest, full-bleed, grid + glance panel         */}
+      {/* EXPERIENCES  -  dark forest, full-bleed, grid + glance panel         */}
       {/* ------------------------------------------------------------------ */}
       <section className="relative overflow-hidden py-28">
         {/* Layered background */}
@@ -268,7 +268,7 @@ export function SubPageView({
               ))}
             </motion.ul>
 
-            {/* At a Glance — dark glassmorphism panel */}
+            {/* At a Glance  -  dark glassmorphism panel */}
             <motion.aside
               variants={fadeUp}
               initial="hidden"
@@ -322,7 +322,7 @@ export function SubPageView({
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/* INQUIRY — deep forest-to-ink gradient, centered white card         */}
+      {/* INQUIRY  -  deep forest-to-ink gradient, centered white card         */}
       {/* ------------------------------------------------------------------ */}
       <section id="enquire" className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-[--color-forest] via-[#142e22] to-[--color-ink]" />
@@ -361,7 +361,7 @@ export function SubPageView({
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/* SIBLINGS — light sand bg, pill links with saffron hover            */}
+      {/* SIBLINGS  -  light sand bg, pill links with saffron hover            */}
       {/* ------------------------------------------------------------------ */}
       {siblings.length > 0 && (
         <section className="bg-[--color-sand] py-16">
@@ -395,7 +395,7 @@ export function SubPageView({
       )}
 
       {/* ------------------------------------------------------------------ */}
-      {/* FAQs — white bg, centered max-w-3xl, CSS plus/minus accordion      */}
+      {/* FAQs  -  white bg, centered max-w-3xl, CSS plus/minus accordion      */}
       {/* ------------------------------------------------------------------ */}
       {content.faqs && content.faqs.length > 0 && (
         <Section>
@@ -425,7 +425,7 @@ export function SubPageView({
                 >
                   <span className="text-base leading-snug">{faq.question}</span>
 
-                  {/* Plus icon — rotates 45deg on open to form × */}
+                  {/* Plus icon  -  rotates 45deg on open to form × */}
                   <span
                     aria-hidden
                     className={[

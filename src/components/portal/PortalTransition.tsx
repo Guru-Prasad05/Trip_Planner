@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 /**
  * Simple, reliable portal transition overlay.
  * Just a quick dark overlay with a compass + route animation.
- * The PortalProvider handles all navigation timing — this is purely visual.
+ * The PortalProvider handles all navigation timing  -  this is purely visual.
  */
 export function PortalTransition({
   active,

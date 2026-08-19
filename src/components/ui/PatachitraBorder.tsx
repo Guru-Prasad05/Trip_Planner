@@ -20,11 +20,11 @@ export function PatachitraBorder({
 }) {
   return (
     <div className={`relative ${className}`}>
-      {/* Outer border — saffron/red */}
+      {/* Outer border  -  saffron/red */}
       <div className="absolute inset-0 rounded-xl border-[3px] border-orange-600/60" />
-      {/* Middle border — gold */}
+      {/* Middle border  -  gold */}
       <div className="absolute inset-[6px] rounded-lg border-2 border-amber-500/50" />
-      {/* Inner border — thin gold */}
+      {/* Inner border  -  thin gold */}
       <div className="absolute inset-[12px] rounded-md border border-amber-400/30" />
 
       {/* Corner medallions */}
@@ -39,7 +39,7 @@ export function PatachitraBorder({
   );
 }
 
-/** Single circular medallion — the signature Patachitra corner element */
+/** Single circular medallion  -  the signature Patachitra corner element */
 function PatachitraMedallion({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -71,7 +71,7 @@ function PatachitraMedallion({ className = "" }: { className?: string }) {
 
 /**
  * Horizontal decorative band in Patachitra style.
- * Repeating circular medallion + dot pattern strip — like the border of the painting.
+ * Repeating circular medallion + dot pattern strip  -  like the border of the painting.
  */
 export function PatachitraBand({ className = "" }: { className?: string }) {
   return (
@@ -135,7 +135,7 @@ export function PatachitraBand({ className = "" }: { className?: string }) {
 }
 
 /**
- * Patachitra-inspired section accent — a small decorative element 
+ * Patachitra-inspired section accent  -  a small decorative element 
  * to place near headings (like the temple finial/kalasha motif).
  */
 export function PatachitraAccent({ className = "" }: { className?: string }) {

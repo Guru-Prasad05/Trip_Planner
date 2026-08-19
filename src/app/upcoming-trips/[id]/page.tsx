@@ -286,7 +286,7 @@ export default async function TripDetailPage({ params }: PageProps) {
         </aside>
       </div>
 
-      {/* HIGHLIGHTS — forest full-bleed */}
+      {/* HIGHLIGHTS  -  forest full-bleed */}
       {t.highlights && (
         <section className="relative overflow-hidden py-20 px-6 md:px-12" style={{ background: "var(--color-forest)" }}>
           <svg className="absolute -top-8 left-0 w-full opacity-10" viewBox="0 0 1440 80" fill="none" aria-hidden>

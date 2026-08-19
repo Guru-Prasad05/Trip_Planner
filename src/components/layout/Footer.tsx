@@ -22,7 +22,7 @@ export function Footer() {
             Ready to Begin?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-white/60">
-            Speak to a trip curator today — free consultation, no obligation.
+            Speak to a trip curator today  -  free consultation, no obligation.
           </p>
           <Link
             href="/contact"

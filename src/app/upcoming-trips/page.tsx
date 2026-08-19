@@ -8,7 +8,7 @@ import type { UpcomingTrip } from "@/lib/trips/types";
 export const metadata = buildMetadata({
   title: "Upcoming Trips",
   description:
-    "Join an upcoming curated group trip across Odisha — Koraput highlands, waterfalls, wildlife & coastal escapes. Dates, prices & full itinerary.",
+    "Join an upcoming curated group trip across Odisha  -  Koraput highlands, waterfalls, wildlife & coastal escapes. Dates, prices & full itinerary.",
   path: "/upcoming-trips",
 });
 
@@ -78,7 +78,7 @@ export default async function UpcomingTripsPage() {
             </h1>
             <p className="text-[15px] sm:text-[17px] leading-[1.65] text-ink/65 font-light max-w-2xl">
               Small-group trekking journeys led by certified guides. Vetted eco-stays,
-              transparent pricing, comprehensive safety protocols — all departures confirmed with minimum 8 travelers.
+              transparent pricing, comprehensive safety protocols  -  all departures confirmed with minimum 8 travelers.
             </p>
 
             {/* Trust badges */}

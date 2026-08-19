@@ -97,7 +97,7 @@ export default async function BlogPostPage({
               Ready to Experience This?
             </h3>
             <p className="mt-2 text-gray-600">
-              Let us plan the perfect trip based on this guide — customised for your group.
+              Let us plan the perfect trip based on this guide  -  customised for your group.
             </p>
             <Link
               href="/contact"

@@ -70,7 +70,7 @@ export async function submitInquiry(
     };
   }
 
-  // Send notification email — fire-and-forget, never fail the user response
+  // Send notification email  -  fire-and-forget, never fail the user response
   const resendKey = process.env.RESEND_API_KEY;
   const notifyEmail = process.env.INQUIRY_NOTIFY_EMAIL;
   if (resendKey && notifyEmail) {
@@ -79,12 +79,12 @@ export async function submitInquiry(
       await resend.emails.send({
         from: "Trip Planner Enquiries <onboarding@resend.dev>",
         to: notifyEmail,
-        subject: `New Inquiry — ${payload.name} (${payload.section})`,
+        subject: `New Inquiry  -  ${payload.name} (${payload.section})`,
         html: `
 <div style="font-family:sans-serif;max-width:560px;color:#1a1410">
   <div style="background:#2f4a3c;padding:24px 28px;border-radius:12px 12px 0 0">
     <h1 style="margin:0;font-size:1.4rem;color:#fff">New Enquiry Received</h1>
-    <p style="margin:4px 0 0;color:rgba(255,255,255,0.6);font-size:0.85rem">Trip Planner — ${payload.section} category</p>
+    <p style="margin:4px 0 0;color:rgba(255,255,255,0.6);font-size:0.85rem">Trip Planner  -  ${payload.section} category</p>
   </div>
   <div style="border:1px solid #e8e3da;border-top:none;padding:24px 28px;border-radius:0 0 12px 12px;background:#fbf7f0">
     <table style="width:100%;border-collapse:collapse">
@@ -102,7 +102,7 @@ export async function submitInquiry(
 </div>`,
       });
     } catch {
-      // Email failure is non-fatal — inquiry already saved to Supabase
+      // Email failure is non-fatal  -  inquiry already saved to Supabase
     }
   }
 

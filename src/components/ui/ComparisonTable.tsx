@@ -1,4 +1,4 @@
-/** Responsive package comparison — real HTML table (crawlable), stacks on mobile. */
+/** Responsive package comparison  -  real HTML table (crawlable), stacks on mobile. */
 export function ComparisonTable({
   headers,
   rows,

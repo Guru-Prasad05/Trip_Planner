@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 /**
  * 3D Kingfisher (GLB model) that:
  * 1. Flies in from one side (2.5s)
- * 2. Perches/hovers at a random spot (5s) — gentle bob, head turning
+ * 2. Perches/hovers at a random spot (5s)  -  gentle bob, head turning
  * 3. Flies away to the other side (2.5s)
  * 
  * Uses Three.js + GLTFLoader loaded LAZILY after page is idle.

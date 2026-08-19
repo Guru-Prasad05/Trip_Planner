@@ -220,7 +220,7 @@ export default function GalleryForm({ trips }: { trips: TripOption[] }) {
                 value={tripId}
                 onChange={(e) => setTripId(e.target.value)}
               >
-                <option value="">— Unassigned —</option>
+                <option value=""> -  Unassigned  - </option>
                 {trips.map((t) => (
                   <option key={t.id} value={t.id}>
                     {t.title}

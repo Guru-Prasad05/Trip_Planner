@@ -18,7 +18,7 @@ const promises = [
       </svg>
     ),
     title: "No Hidden Charges",
-    desc: "100% all-inclusive pricing — transport, stay, food, sightseeing and essentials. The price you see is the price you pay.",
+    desc: "100% all-inclusive pricing  -  transport, stay, food, sightseeing and essentials. The price you see is the price you pay.",
   },
   {
     icon: (
@@ -36,7 +36,7 @@ const promises = [
       </svg>
     ),
     title: "Experienced Trip Leaders",
-    desc: "Guided tours that save time and skip confusion — more discovering, less logistics stress.",
+    desc: "Guided tours that save time and skip confusion  -  more discovering, less logistics stress.",
   },
   {
     icon: (
@@ -70,7 +70,7 @@ const promises = [
 export default function AboutPage() {
   return (
     <>
-      {/* ─── HERO — full viewport, dark overlay, giant italic headline ─── */}
+      {/* ─── HERO  -  full viewport, dark overlay, giant italic headline ─── */}
       <section className="relative flex min-h-screen items-end overflow-hidden bg-ink">
         <Image
           src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80"
@@ -80,7 +80,7 @@ export default function AboutPage() {
           priority
           className="object-cover"
         />
-        {/* layered dark gradients — bottom-to-top heavy for text legibility */}
+        {/* layered dark gradients  -  bottom-to-top heavy for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
         <div className="absolute inset-0 bg-ink/30" />
 
@@ -91,7 +91,7 @@ export default function AboutPage() {
               className="mb-5 inline-block text-[0.68rem] font-bold uppercase tracking-[0.45em]"
               style={{ color: "var(--color-saffron)" }}
             >
-              Our Story — Trip Planner
+              Our Story  -  Trip Planner
             </p>
 
             {/* giant headline */}
@@ -111,7 +111,7 @@ export default function AboutPage() {
 
             <p className="mt-8 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
               Born in Odisha, rooted in its culture, and driven by a single promise
-              — every traveller is family.
+               -  every traveller is family.
             </p>
           </div>
 
@@ -131,7 +131,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── STATS BAND — dark forest, giant saffron numbers ─── */}
+      {/* ─── STATS BAND  -  dark forest, giant saffron numbers ─── */}
       <section style={{ background: "var(--color-forest)" }}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
           <div className="grid grid-cols-2 divide-x lg:grid-cols-4" style={{ borderColor: "rgba(212,164,55,0.25)" }}>
@@ -167,7 +167,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── STORY / MISSION — two-column ─── */}
+      {/* ─── STORY / MISSION  -  two-column ─── */}
       <section className="py-28" style={{ background: "var(--color-ivory)" }}>
         <div className="mx-auto grid max-w-[1280px] items-center gap-16 px-6 sm:px-10 lg:grid-cols-2">
 
@@ -251,7 +251,7 @@ export default function AboutPage() {
               className="mt-7 text-[1.05rem] leading-[1.75]"
               style={{ color: "rgba(26,20,16,0.72)" }}
             >
-              At Trip Planner, we don&apos;t just sell trips — we create experiences
+              At Trip Planner, we don&apos;t just sell trips  -  we create experiences
               that stay with you forever. We are your dedicated travel partners,
               not local operators looking for a quick transaction.
             </p>
@@ -267,7 +267,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── VALUES / PROMISES — deep dark, glowing cards ─── */}
+      {/* ─── VALUES / PROMISES  -  deep dark, glowing cards ─── */}
       <section className="relative overflow-hidden py-28" style={{ background: "var(--color-ink)" }}>
         {/* subtle background texture */}
         <Image
@@ -352,7 +352,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── PRICING CALLOUT — editorial, no emoji, bold accent border ─── */}
+      {/* ─── PRICING CALLOUT  -  editorial, no emoji, bold accent border ─── */}
       <section style={{ background: "var(--color-ink)" }} className="pb-4">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
           <div
@@ -396,7 +396,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── CTA — dark forest, saffron pill button ─── */}
+      {/* ─── CTA  -  dark forest, saffron pill button ─── */}
       <section
         className="py-28 text-center"
         style={{ background: "var(--color-forest)" }}

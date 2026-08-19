@@ -26,7 +26,7 @@ const natureCards: CategoryCard[] = [
 ];
 
 const celebrationCards: CategoryCard[] = [
-  { title: "Birthday Parties", description: "Private birthday weekends with custom cake, cultural performances & bonfire nights. For groups of 6–20.", count: "From ₹8,499/person", href: "/celebrations/birthday", imageSrc: img("photo-1530103862676-de8c9debad1d"), imageAlt: "Birthday celebration with warm lighting" },
+  { title: "Birthday Parties", description: "Private birthday weekends with custom cake, cultural performances & bonfire nights. For groups of 6-20.", count: "From ₹8,499/person", href: "/celebrations/birthday", imageSrc: img("photo-1530103862676-de8c9debad1d"), imageAlt: "Birthday celebration with warm lighting" },
   { title: "Bachelor & Bachelorette", href: "/celebrations/bachelor-bachelorette", imageSrc: img("photo-1467810563316-b5476525c0f9"), imageAlt: "Beach party at dusk" },
   { title: "Pool Parties", href: "/celebrations/pool-party", imageSrc: img("photo-1576013551627-0cc20b96c2a7"), imageAlt: "Swimming pool with clear blue water and lounge chairs" },
   { title: "Campfire Nights", href: "/celebrations/campfire", imageSrc: img("photo-1475483768296-6163e08872a1"), imageAlt: "Bonfire under stars" },
@@ -34,7 +34,7 @@ const celebrationCards: CategoryCard[] = [
 ];
 
 const corporateCards: CategoryCard[] = [
-  { title: "Team Building", description: "Real challenges in Odisha's forests & rivers — raft-building, navigation, jungle cooking & bonfire debriefs.", count: "20–100 people", href: "/corporate-groups/team-building", imageSrc: img("photo-1531545514256-b1400bc00f31"), imageAlt: "Team collaboration outdoors" },
+  { title: "Team Building", description: "Real challenges in Odisha's forests & rivers - raft-building, navigation, jungle cooking & bonfire debriefs.", count: "20-100 people", href: "/corporate-groups/team-building", imageSrc: img("photo-1531545514256-b1400bc00f31"), imageAlt: "Team collaboration outdoors" },
   { title: "Leadership Offsite", href: "/corporate-groups/leadership-offsite", imageSrc: img("photo-1517048676732-d65bc937f952"), imageAlt: "Executive meeting" },
   { title: "Annual Day", href: "/corporate-groups/annual-day", imageSrc: img("photo-1511795409834-ef04bbd61622"), imageAlt: "Company celebration" },
   { title: "Incentive Trips", href: "/corporate-groups/incentive-trips", imageSrc: img("photo-1469474968028-56623f02e42e"), imageAlt: "Scenic reward destination" },
@@ -42,7 +42,7 @@ const corporateCards: CategoryCard[] = [
 ];
 
 const spiritualCards: CategoryCard[] = [
-  { title: "Char Dham Yatra", description: "Yamunotri, Gangotri, Kedarnath & Badrinath — one of India's most revered pilgrimage routes, planned with care.", count: "9N/10D", href: "/spiritual/char-dham", imageSrc: img("photo-1626621341517-bbf3d9990a23"), imageAlt: "Kedarnath temple with snow mountains" },
+  { title: "Char Dham Yatra", description: "Yamunotri, Gangotri, Kedarnath & Badrinath - one of India's most revered pilgrimage routes, planned with care.", count: "9N/10D", href: "/spiritual/char-dham", imageSrc: img("photo-1626621341517-bbf3d9990a23"), imageAlt: "Kedarnath temple with snow mountains" },
   { title: "Kashi & Varanasi", href: "/spiritual/kashi-varanasi", imageSrc: "/spiritual-varanasi-ghat.png", imageAlt: "Varanasi ghats with boats" },
   { title: "Jyotirlinga Circuit", href: "/spiritual/jyotirlinga", imageSrc: img("photo-1609766857041-ed402ea8069a"), imageAlt: "Shiva temple stone carvings" },
   { title: "Shakti Peetha", href: "/spiritual/shakti-peetha", imageSrc: img("photo-1604608672516-f1b9b1d37076"), imageAlt: "Goddess temple" },
@@ -64,10 +64,10 @@ export default function HomePage() {
     <>
       <FlyingBirds />
       <h1 className="sr-only">
-        Trip Planner — Group Tours, Spiritual Journeys & Celebrations
+        Trip Planner - Group Tours, Spiritual Journeys & Celebrations
       </h1>
 
-      {/* Hero — full-bleed waterfall + person, reference style */}
+      {/* Hero - full-bleed waterfall + person, reference style */}
       <Hero />
 
       {/* Trust stats bar */}
@@ -77,20 +77,20 @@ export default function HomePage() {
       <CategoryRow
         scriptTitle="Wild Odisha"
         boldTitle="Nature Tours"
-        description="Forests, waterfalls, wildlife & coastlines — six distinct natural worlds crafted for groups who want to go deeper."
+        description="Forests, waterfalls, wildlife & coastlines - six distinct natural worlds crafted for groups who want to go deeper."
         ctaLabel="Explore All Nature Tours"
         ctaHref="/nature-tours"
         cards={natureCards}
         theme="nature"
       />
 
-      {/* Full-bleed banner — like "Learn & Give Back" section */}
+      {/* Full-bleed banner - like "Learn & Give Back" section */}
       <FullBleedBanner
         imageSrc="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80"
         imageAlt="Person gazing at misty mountains from a viewpoint"
         scriptTitle="Discover"
         boldTitle="Sacred India"
-        description="From the ghats of Kashi to the peaks of Char Dham — tirtha, Jyotirlinga, and Shakti Peetha journeys, planned with reverence and care."
+        description="From the ghats of Kashi to the peaks of Char Dham - tirtha, Jyotirlinga, and Shakti Peetha journeys, planned with reverence and care."
         ctaLabel="Explore Pilgrimages"
         ctaHref="/spiritual-journeys"
       />
@@ -99,7 +99,7 @@ export default function HomePage() {
       <CategoryRow
         scriptTitle="Celebrate"
         boldTitle="Special Moments"
-        description="Birthdays, bachelor nights, pool parties, campfires & friends' getaways — crafted with total care, zero planning stress."
+        description="Birthdays, bachelor nights, pool parties, campfires & friends' getaways - crafted with total care, zero planning stress."
         ctaLabel="Explore Celebrations"
         ctaHref="/celebrations"
         cards={celebrationCards}
@@ -111,7 +111,7 @@ export default function HomePage() {
       <CategoryRow
         scriptTitle="Team Outings"
         boldTitle="Corporate & Groups"
-        description="Nature-immersive corporate experiences in Odisha — where your team returns with shared stories no team-building worksheet could create."
+        description="Nature-immersive corporate experiences in Odisha - where your team returns with shared stories no team-building worksheet could create."
         ctaLabel="Explore Corporate Plans"
         ctaHref="/corporate-groups"
         cards={corporateCards}
@@ -121,13 +121,13 @@ export default function HomePage() {
       {/* Cool Destinations strip (like "Cool Cities" in reference) */}
       <CoolCities title="Popular Destinations" cities={coolDestinations} />
 
-      {/* Testimonials — matching reference style */}
+      {/* Testimonials - matching reference style */}
       <Testimonials />
 
       {/* Affiliated Partners */}
       <Partners />
 
-      {/* Full-bleed banner #2 — Philosophy / About */}
+      {/* Full-bleed banner #2 - Philosophy / About */}
       <FullBleedBanner
         imageSrc="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80"
         imageAlt="Scenic landscape with person overlooking mountains and lake"
@@ -143,7 +143,7 @@ export default function HomePage() {
       <CategoryRow
         scriptTitle="Spiritual"
         boldTitle="Pilgrimages"
-        description="Char Dham, Jyotirlinga, Shakti Peetha & Varanasi — guided, family-friendly pilgrimage packages across all of India."
+        description="Char Dham, Jyotirlinga, Shakti Peetha & Varanasi - guided, family-friendly pilgrimage packages across all of India."
         ctaLabel="Explore Sacred Routes"
         ctaHref="/spiritual-journeys"
         cards={spiritualCards}
@@ -161,7 +161,7 @@ export default function HomePage() {
         <StepFlow steps={howItWorks} />
       </Section>
 
-      {/* === WHY TRAVEL WITH US — dark olive section with Patachitra texture === */}
+      {/* === WHY TRAVEL WITH US - dark olive section with Patachitra texture === */}
       <section className="relative overflow-hidden bg-[#1a2e1f] text-white">
         {/* Patachitra art as visible decorative background */}
         <Image
@@ -193,7 +193,7 @@ export default function HomePage() {
                   </span>
                 </h2>
                 <p className="mt-6 max-w-sm text-base leading-relaxed text-white/70">
-                  We don&apos;t just sell trips — we create comfortable, safe, and
+                  We don&apos;t just sell trips - we create comfortable, safe, and
                   hassle-free travel experiences. Every traveller is family.
                 </p>
                 <Link
@@ -216,7 +216,7 @@ export default function HomePage() {
                     <p className="mt-1.5 text-xs leading-relaxed text-white/70">{u.text}</p>
                   </div>
                 ))}
-                {/* Patachitra art reference card — Odisha cultural touch */}
+                {/* Patachitra art reference card - Odisha cultural touch */}
                 <div className="relative overflow-hidden rounded-xl border border-[--color-gold]/20 sm:col-span-2">
                   <div className="relative h-28 w-full">
                     <Image
@@ -229,7 +229,7 @@ export default function HomePage() {
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-[#1a2e1f]/80 to-transparent px-6">
                     <p className="font-[family-name:--font-display] text-sm italic text-white/90">
-                      &ldquo;Rooted in Odisha&apos;s Patachitra tradition — every journey we craft tells a story&rdquo;
+                      &ldquo;Rooted in Odisha&apos;s Patachitra tradition - every journey we craft tells a story&rdquo;
                     </p>
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* FAQ — still inside the dark section */}
+          {/* FAQ - still inside the dark section */}
           <div className="border-t border-white/10">
             <div className="mx-auto max-w-3xl px-6 py-20">
               <h2 className="text-center font-[family-name:--font-display] text-[--text-section] font-semibold text-white">
