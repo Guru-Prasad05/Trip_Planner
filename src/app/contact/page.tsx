@@ -162,7 +162,7 @@ export default function ContactPage() {
           }}
         />
 
-        <div className="relative mx-auto max-w-[1280px] px-6 pb-20 pt-32 text-center">
+        <div className="relative mx-auto max-w-[1280px] px-6 pb-20 pt-24 text-center">
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em]"
             style={{

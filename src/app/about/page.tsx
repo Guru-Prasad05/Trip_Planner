@@ -84,7 +84,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
         <div className="absolute inset-0 bg-ink/30" />
 
-        <div className="relative z-10 w-full pb-20 pt-40 md:pb-28">
+        <div className="relative z-10 w-full pb-20 pt-24 md:pb-28">
           <div className="mx-auto max-w-[1280px] px-6 sm:px-10">
             {/* saffron eyebrow */}
             <p

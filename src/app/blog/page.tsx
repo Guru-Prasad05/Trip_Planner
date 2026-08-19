@@ -49,7 +49,7 @@ export default function BlogPage() {
         <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 60" fill="none" aria-hidden>
           <path d="M0 60 C360 10 1080 10 1440 60Z" fill="var(--color-ivory)" />
         </svg>
-        <div className="relative z-10 mx-auto w-full max-w-[1280px] px-8 pb-16 pt-32">
+        <div className="relative z-10 mx-auto w-full max-w-[1280px] px-8 pb-16 pt-24">
           <p className="text-xs font-bold uppercase tracking-[0.3em] mb-3" style={{ color: "var(--color-saffron)" }}>
             Stories &amp; Guides
           </p>
