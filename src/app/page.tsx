@@ -17,6 +17,8 @@ const img = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=c
 // --- Category data matching the horizontal-scroll card row pattern ---
 
 const natureCards: CategoryCard[] = [
+  { title: "Mahendragiri", description: "Trek to sacred summit, immerse in Tibetan monastery & find profound peace where prayer flags flutter.", count: "3 Days", href: "/nature-tours/mahendragiri", imageSrc: "/file_00000000903c821193a842b1544133f3.png", imageAlt: "Misty Mahendragiri with prayer flags" },
+  { title: "Deomali Peak", description: "Scale Odisha's highest summit at 1,672m. Starlit camping, cloud-wrapped trails & coffee plantations.", count: "2-3 Days", href: "/nature-tours/deomali", imageSrc: "/file_00000000d2908211ab182851e4ba95fa.png", imageAlt: "Deomali peak shrouded in clouds" },
   { title: "Koraput Highlands", description: "Scale Deomali Peak, witness thundering waterfalls & immerse in tribal culture in Odisha's untamed frontier.", count: "6 Experiences", href: "/nature-tours/koraput", imageSrc: img("photo-1454942901704-3c44c11b2ad1"), imageAlt: "Misty mountain peaks of Koraput" },
   { title: "Similipal", href: "/nature-tours/similipal", imageSrc: img("photo-1549366021-9f761d450615"), imageAlt: "Sal forest canopy" },
   { title: "Chilika Lake", href: "/nature-tours/chilika", imageSrc: img("photo-1518467166778-b88f373ffec7"), imageAlt: "Boat on lagoon at sunset" },
