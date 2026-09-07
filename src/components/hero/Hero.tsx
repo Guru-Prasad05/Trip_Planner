@@ -5,9 +5,19 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="relative min-h-[100svh] overflow-hidden">
+      {/* Mobile: static image (better performance, no autoplay issues) */}
+      <div className="absolute inset-0 md:hidden">
+        <img
+          src="/hero.png"
+          alt=""
+          className="h-full w-full object-cover object-[center_35%]"
+        />
+      </div>
+
+      {/* Desktop: video background */}
       <video
         autoPlay muted loop playsInline preload="metadata"
-        className="absolute inset-0 h-full w-full object-cover object-[center_35%] sm:object-center"
+        className="absolute inset-0 h-full w-full object-cover object-center hidden md:block"
         poster="/hero.png"
       >
         <source src="/hero.mp4" type="video/mp4" />
