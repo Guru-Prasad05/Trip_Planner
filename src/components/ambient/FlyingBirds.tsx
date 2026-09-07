@@ -39,10 +39,12 @@ export function FlyingBirds() {
 
       const w = window.innerWidth;
       const h = window.innerHeight;
+      const isMobile = w < 768;
 
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(50, w / h, 0.1, 100);
-      camera.position.set(0, 0, 10);
+      // Mobile: pull camera back more to fit bird in smaller viewport
+      camera.position.set(0, 0, isMobile ? 15 : 10);
 
       const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
@@ -64,7 +66,8 @@ export function FlyingBirds() {
       loader.load("/models/kingfisher.glb", (gltf) => {
         if (disposed) return;
         bird = gltf.scene;
-        bird.scale.setScalar(0.35);
+        // Mobile: smaller scale to fit viewport
+        bird.scale.setScalar(isMobile ? 0.25 : 0.35);
         bird.visible = false;
         scene.add(bird);
 
@@ -101,7 +104,13 @@ export function FlyingBirds() {
             stateTime = 0;
             idleTime = 0;
             flyDir = Math.random() > 0.5 ? 1 : -1;
-            perchPos = { x: -3 + Math.random() * 6, y: 1 + Math.random() * 3 };
+            // Mobile: narrower perch range to fit screen
+            const xRange = isMobile ? 4 : 6;
+            const yRange = isMobile ? 2 : 3;
+            perchPos = {
+              x: -(xRange/2) + Math.random() * xRange,
+              y: 1 + Math.random() * yRange
+            };
             bird.visible = true;
             bird.rotation.y = flyDir > 0 ? Math.PI * 0.5 : -Math.PI * 0.5;
           }
@@ -113,7 +122,9 @@ export function FlyingBirds() {
           if (state === "fly-in") {
             const p = Math.min(stateTime / FLY_DUR, 1);
             const ease = 1 - Math.pow(1 - p, 3);
-            const sx = flyDir > 0 ? -14 : 14;
+            // Mobile: shorter entry distance
+            const entryDist = isMobile ? 10 : 14;
+            const sx = flyDir > 0 ? -entryDist : entryDist;
             bird.position.x = sx + (perchPos.x - sx) * ease;
             bird.position.y = 5 + (perchPos.y - 5) * ease;
             bird.position.z = -2 + ease * 2;
@@ -134,7 +145,9 @@ export function FlyingBirds() {
           if (state === "fly-out") {
             const p = Math.min(stateTime / FLY_DUR, 1);
             const ease = p * p;
-            const ex = flyDir > 0 ? -14 : 14;
+            // Mobile: shorter exit distance
+            const exitDist = isMobile ? 10 : 14;
+            const ex = flyDir > 0 ? -exitDist : exitDist;
             bird.position.x = perchPos.x + (ex - perchPos.x) * ease;
             bird.position.y = perchPos.y + (6 - perchPos.y) * ease;
             bird.rotation.z = ease * -0.3 * flyDir;
@@ -154,6 +167,13 @@ export function FlyingBirds() {
         camera.aspect = nw / nh;
         camera.updateProjectionMatrix();
         renderer.setSize(nw, nh);
+
+        // Update mobile detection on resize
+        const nowMobile = nw < 768;
+        if (nowMobile !== isMobile) {
+          // Viewport changed between mobile/desktop - reload to apply correct scale
+          window.location.reload();
+        }
       };
       window.addEventListener("resize", onResize);
 
