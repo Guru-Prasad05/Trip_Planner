@@ -7,7 +7,7 @@ export function Hero() {
     <section className="relative min-h-[100svh] overflow-hidden">
       <video
         autoPlay muted loop playsInline preload="metadata"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-[center_35%] sm:object-center"
         poster="/hero.png"
       >
         <source src="/hero.mp4" type="video/mp4" />
@@ -16,8 +16,7 @@ export function Hero() {
       {/* Left gradient for text readability */}
       <div
         aria-hidden
-        className="absolute inset-0 z-[1]"
-        style={{ background: "linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.48) 55%, rgba(0,0,0,0.15) 80%)" }}
+        className="absolute inset-0 z-[1] bg-gradient-to-b from-black/78 via-black/48 to-black/15 sm:bg-gradient-to-r sm:from-black/78 sm:via-black/48 sm:to-transparent"
       />
 
       {/* Bottom gradient fade */}
@@ -38,8 +37,8 @@ export function Hero() {
         <path d="M0,28 Q180,56 360,28 T720,28 T1080,28 T1440,28 L1440,56 L0,56 Z" fill="currentColor"/>
       </svg>
 
-      {/* Botanical accent  -  top right */}
-      <div className="absolute top-16 right-16 w-48 h-48 opacity-[0.07] pointer-events-none z-[2]" aria-hidden="true">
+      {/* Botanical accent  -  top right - hidden on mobile */}
+      <div className="hidden lg:block absolute top-16 right-16 w-48 h-48 opacity-[0.07] pointer-events-none z-[2]" aria-hidden="true">
         <svg viewBox="0 0 100 100" className="text-white">
           <ellipse cx="50" cy="50" rx="18" ry="32" fill="currentColor" opacity="0.3"/>
           <path d="M50,18 Q36,36 50,50 Q64,36 50,18" fill="currentColor" opacity="0.5"/>
@@ -51,8 +50,8 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-[4] flex min-h-[100svh] items-center">
-        <div className="mx-auto w-full max-w-[1280px] px-8 py-32 sm:px-12 lg:px-16">
-          <div className="max-w-2xl">
+        <div className="mx-auto w-full max-w-[1280px] px-4 sm:px-8 lg:px-12 xl:px-16 py-24 sm:py-32">
+          <div className="max-w-full sm:max-w-2xl lg:max-w-3xl pt-safe-offset-20 pb-safe-offset-32">
             <div className="flex items-center gap-3 mb-5">
               <div className="h-[2px] w-12 bg-gold/80"/>
               <p className="text-[11px] font-bold uppercase tracking-trust text-gold">
@@ -61,35 +60,35 @@ export function Hero() {
             </div>
 
             <h1 className="space-y-2">
-              <span className="block font-display text-hero-primary font-black uppercase leading-[0.88] tracking-tight text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9), 0 8px 16px rgba(0,0,0,0.6)' }}>
+              <span className="block font-display text-[clamp(2.5rem,12vw,5.5rem)] sm:text-hero-primary font-black uppercase leading-[0.9] sm:leading-[0.88] tracking-tight text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.9), 0 4px 12px rgba(0,0,0,0.5)' }}>
                 Journey Into
               </span>
-              <span className="block font-display text-hero-accent font-semibold italic leading-[0.82] tracking-nature text-gold drop-shadow-[0_4px_20px_rgba(0,0,0,0.7)]" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.9), 0 8px 16px rgba(0,0,0,0.5)' }}>
+              <span className="block font-display text-[clamp(2rem,10vw,4.5rem)] sm:text-hero-accent font-semibold italic leading-[0.9] sm:leading-[0.82] tracking-nature text-gold drop-shadow-[0_4px_20px_rgba(0,0,0,0.7)]" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.9), 0 4px 12px rgba(0,0,0,0.4)' }}>
                 The Wild
               </span>
             </h1>
 
-            <p className="mt-9 max-w-lg text-[16px] leading-[1.65] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-[18px] font-normal" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.9)' }}>
+            <p className="mt-9 max-w-full sm:max-w-md lg:max-w-lg text-[15px] sm:text-[16px] lg:text-[18px] leading-[1.7] sm:leading-[1.65] text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] sm:drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] font-normal">
               Expert-led trekking journeys through sacred forests and untouched highlands.
               Small groups, vetted stays, safety-first protocols  -  where adventure meets trust.
             </p>
 
             {/* Trust indicators */}
-            <div className="mt-6 flex flex-wrap items-center gap-4 text-white text-xs font-semibold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+            <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 text-white text-xs font-semibold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
               <div className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
                 </svg>
                 <span className="font-medium">Small Groups · 12 max</span>
               </div>
-              <div className="h-3 w-[1px] bg-white/30"/>
+              <div className="hidden sm:block h-3 w-[1px] bg-white/30"/>
               <div className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
                 <span className="font-medium">Licensed · Insured</span>
               </div>
-              <div className="h-3 w-[1px] bg-white/30"/>
+              <div className="hidden sm:block h-3 w-[1px] bg-white/30"/>
               <div className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
@@ -98,27 +97,27 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="px-8 py-4 text-sm font-bold uppercase tracking-wider text-white
+                className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-sm min-h-[48px] font-bold uppercase tracking-wide sm:tracking-wider text-white touch-manipulation
                          bg-[--color-forest]
                          shadow-[6px_6px_0px_0px_rgba(0,0,0,0.35)]
                          hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,0.42)]
                          hover:-translate-x-1 hover:-translate-y-1
-                         transition-all duration-300"
+                         transition-all duration-300 flex items-center justify-center"
                 style={{ clipPath: 'polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px))' }}
               >
                 Plan My Trip
               </Link>
               <a
                 href="#categories"
-                className="px-8 py-4 text-sm font-bold uppercase tracking-wider text-white
+                className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-sm min-h-[48px] font-bold uppercase tracking-wide sm:tracking-wider text-white touch-manipulation
                          border-2 border-white/70
                          shadow-[4px_4px_0px_0px_rgba(255,255,255,0.15)]
                          hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.25)]
                          hover:-translate-x-0.5 hover:-translate-y-0.5
-                         transition-all duration-300"
+                         transition-all duration-300 flex items-center justify-center"
                 style={{ clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)' }}
               >
                 Explore Journeys
@@ -128,8 +127,8 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div aria-hidden className="absolute bottom-20 left-1/2 z-[4] -translate-x-1/2">
+      {/* Scroll indicator - hidden on mobile */}
+      <div aria-hidden className="hidden sm:flex absolute bottom-28 sm:bottom-20 left-1/2 z-[4] -translate-x-1/2">
         <div className="flex flex-col items-center gap-2">
           <span className="text-[10px] uppercase tracking-[0.3em] text-white/50">Scroll</span>
           <div className="h-8 w-[1px] overflow-hidden">

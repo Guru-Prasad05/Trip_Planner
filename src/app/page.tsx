@@ -155,8 +155,8 @@ export default function HomePage() {
 
       {/* How it works */}
       <Section className="bg-[#f7f5f2]">
-        <header className="mb-12 text-center">
-          <h2 className="font-[family-name:--font-display] text-[--text-section] font-semibold">
+        <header className="mb-8 sm:mb-12 text-center">
+          <h2 className="font-[family-name:--font-display] text-[clamp(1.75rem,4vw,2.5rem)] sm:text-[--text-section] font-semibold">
             How It Works
           </h2>
         </header>
@@ -182,45 +182,45 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative z-10">
           {/* USP Header */}
-          <div className="mx-auto max-w-[1280px] px-6 pt-24 pb-16 sm:px-12">
-            <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr] lg:items-start">
+          <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 lg:px-12 pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16">
+            <div className="grid gap-8 sm:gap-10 lg:gap-12 lg:grid-cols-[1fr_1.5fr] lg:items-start">
               {/* Left: title + description (reference style) */}
               <div>
                 <h2>
-                  <span className="block font-[family-name:--font-display] text-[clamp(2.5rem,5vw,4rem)] italic font-light text-white/90">
+                  <span className="block font-[family-name:--font-display] text-[clamp(2rem,8vw,4rem)] sm:text-[clamp(2.5rem,5vw,4rem)] italic font-light text-white/90">
                     Why Travel
                   </span>
-                  <span className="block text-[clamp(1.3rem,2.5vw,2rem)] font-extrabold uppercase tracking-wider text-white">
+                  <span className="block text-[clamp(1.1rem,4vw,2rem)] sm:text-[clamp(1.3rem,2.5vw,2rem)] font-extrabold uppercase tracking-wider text-white">
                     With Us
                   </span>
                 </h2>
-                <p className="mt-6 max-w-sm text-base leading-relaxed text-white/70">
+                <p className="mt-4 sm:mt-6 max-w-sm text-sm sm:text-base leading-relaxed text-white/70">
                   We don&apos;t just sell trips - we create comfortable, safe, and
                   hassle-free travel experiences. Every traveller is family.
                 </p>
                 <Link
                   href="/about"
-                  className="mt-8 inline-block rounded-sm border-2 border-white/40 px-7 py-3 text-sm font-bold uppercase tracking-wider text-white transition-all hover:bg-white hover:text-[--color-forest]"
+                  className="mt-6 sm:mt-8 inline-block rounded-sm border-2 border-white/40 px-6 sm:px-7 py-3 text-xs sm:text-sm font-bold uppercase tracking-wider text-white transition-all hover:bg-white hover:text-[--color-forest] min-h-[44px] flex items-center justify-center touch-manipulation"
                 >
                   More About Us
                 </Link>
               </div>
 
               {/* Right: USP cards grid */}
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-3 sm:gap-4 grid-cols-1 xs:grid-cols-2">
                 {uspPoints.map((u) => (
                   <div
                     key={u.title}
-                    className="rounded-xl border border-white/15 bg-white/10 p-5 backdrop-blur-md transition-colors hover:bg-white/15"
+                    className="rounded-xl border border-white/15 bg-white/10 p-4 sm:p-5 backdrop-blur-md transition-colors hover:bg-white/15"
                   >
-                    <div className="text-2xl">{u.icon}</div>
-                    <h3 className="mt-2 text-sm font-bold text-white">{u.title}</h3>
-                    <p className="mt-1.5 text-xs leading-relaxed text-white/70">{u.text}</p>
+                    <div className="text-xl sm:text-2xl">{u.icon}</div>
+                    <h3 className="mt-2 text-xs sm:text-sm font-bold text-white">{u.title}</h3>
+                    <p className="mt-1.5 text-[11px] sm:text-xs leading-relaxed text-white/70">{u.text}</p>
                   </div>
                 ))}
                 {/* Patachitra art reference card - Odisha cultural touch */}
-                <div className="relative overflow-hidden rounded-xl border border-[--color-gold]/20 sm:col-span-2">
-                  <div className="relative h-28 w-full">
+                <div className="relative overflow-hidden rounded-xl border border-[--color-gold]/20 xs:col-span-2">
+                  <div className="relative h-24 sm:h-28 w-full">
                     <Image
                       src="/patachitra-1.jpg"
                       alt="Traditional Odisha Patachitra art depicting mythology and nature"
@@ -229,8 +229,8 @@ export default function HomePage() {
                       className="object-cover opacity-30"
                     />
                   </div>
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-[#1a2e1f]/80 to-transparent px-6">
-                    <p className="font-[family-name:--font-display] text-sm italic text-white/90">
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-[#1a2e1f]/80 to-transparent px-4 sm:px-6">
+                    <p className="font-[family-name:--font-display] text-xs sm:text-sm italic text-white/90">
                       &ldquo;Rooted in Odisha&apos;s Patachitra tradition - every journey we craft tells a story&rdquo;
                     </p>
                   </div>
@@ -239,8 +239,8 @@ export default function HomePage() {
             </div>
 
             {/* Pricing warning */}
-            <div className="mx-auto mt-12 max-w-2xl rounded-lg border border-[--color-gold]/30 bg-[--color-gold]/10 p-5 text-center">
-              <p className="text-sm text-white/80">
+            <div className="mx-auto mt-8 sm:mt-12 max-w-2xl rounded-lg border border-[--color-gold]/30 bg-[--color-gold]/10 p-4 sm:p-5 text-center">
+              <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
                 ⚠️ Don&apos;t be misled by unrealistic prices. A trip advertised for ₹4,000
                 can end up costing ₹8,000+. We focus on <strong className="text-[--color-gold]">transparent pricing</strong> and
                 unforgettable experiences.
@@ -250,18 +250,18 @@ export default function HomePage() {
 
           {/* FAQ - still inside the dark section */}
           <div className="border-t border-white/10">
-            <div className="mx-auto max-w-3xl px-6 py-20">
-              <h2 className="text-center font-[family-name:--font-display] text-[--text-section] font-semibold text-white">
+            <div className="mx-auto max-w-3xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+              <h2 className="text-center font-[family-name:--font-display] text-[clamp(1.75rem,4vw,2.5rem)] sm:text-[--text-section] font-semibold text-white">
                 Frequently Asked Questions
               </h2>
-              <dl className="mt-10 divide-y divide-white/10">
+              <dl className="mt-8 sm:mt-10 divide-y divide-white/10">
                 {homeFaqs.map((faq) => (
-                  <details key={faq.question} className="group py-5">
-                    <summary className="flex cursor-pointer items-center justify-between gap-4 text-left font-medium text-white">
+                  <details key={faq.question} className="group py-4 sm:py-5">
+                    <summary className="flex cursor-pointer items-center justify-between gap-3 sm:gap-4 text-left text-sm sm:text-base font-medium text-white touch-manipulation min-h-[44px]">
                       <span>{faq.question}</span>
-                      <span className="text-[--color-gold] transition-transform group-open:rotate-45">+</span>
+                      <span className="text-[--color-gold] transition-transform group-open:rotate-45 text-xl sm:text-2xl shrink-0">+</span>
                     </summary>
-                    <p className="mt-3 text-sm leading-relaxed text-white/70">{faq.answer}</p>
+                    <p className="mt-2 sm:mt-3 text-xs sm:text-sm leading-relaxed text-white/70">{faq.answer}</p>
                   </details>
                 ))}
               </dl>
